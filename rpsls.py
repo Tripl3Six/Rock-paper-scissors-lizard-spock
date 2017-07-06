@@ -32,8 +32,6 @@ def name_to_number(name):
 
 
     # convert name to number using if/elif/else
-    # don't forget to return the result!
-
 
 def number_to_name(number):
     if number == 0:
@@ -48,14 +46,12 @@ def number_to_name(number):
         name = 'scissors'
     else:
         print "Error number not in the range 0 to 4 inclusive"
-        
-    return name
-    
-    # convert number to a name using if/elif/else
-    # don't forget to return the result!
-    
 
-def rpsls(player_choice): 
+    return name
+
+    # convert number to a name using if/elif/else
+
+def rpsls(player_choice):
     # print a blank line to separate consecutive games
     print
     
@@ -85,14 +81,9 @@ def rpsls(player_choice):
     else:
         print "Tie"
         
-    
-# test your code - THESE CALLS MUST BE PRESENT IN YOUR SUBMITTED CODE
-rpsls("rock")
-rpsls("Spock")
-rpsls("paper")
-rpsls("lizard")
-rpsls("scissors")
+player = input("Enter 'rock', 'paper', 
+'scissors', 'lizard', or 'spock': ")
 
-# always remember to check your completed program against the grading rubric
+rpsls(player)
 
 
